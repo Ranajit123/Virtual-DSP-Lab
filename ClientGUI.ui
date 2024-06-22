@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>599</width>
+    <height>305</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Client</string>
+  </property>
+  <property name="statusTip">
+   <string>Ranajit Das            Dipankar Ray           Suhana Das          Sujoy Mondal (Project Mentor)</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="2">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>83</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;Times New Roman&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Trying to connect to server...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="connect_button">
+          <property name="text">
+           <string>Connect to Server</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="disconnect_button">
+          <property name="text">
+           <string>Disconnect from Server</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="3" rowspan="2">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>83</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Live Recorded Audio Data</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="3" column="0" colspan="3">
+        <widget class="QPushButton" name="IIR_plot">
+         <property name="text">
+          <string>IIR Filter Audio Plot</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <widget class="QPushButton" name="start_plot">
+         <property name="text">
+          <string>Original Audio Plot</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">font: 8pt &quot;Times New Roman&quot;;
+font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Send The Audio Duration</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="3">
+        <widget class="QPushButton" name="FIR_Plot">
+         <property name="text">
+          <string>FIR Filter Audio Plot</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="send_button">
+         <property name="text">
+          <string>Send</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLineEdit" name="Duration_line_edit">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Enter Audio Duration</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Theoretical Data</string>
+      </property>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>271</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>IIR Filter</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="IIRLPF">
+           <property name="text">
+            <string>LPF Output Signal</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="IIRBPF">
+           <property name="text">
+            <string>BPF Output Signal</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>138</y>
+         <width>271</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>FIR Filter</string>
+       </property>
+       <widget class="QPushButton" name="FIRLPF">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>121</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>LPF Output Signal</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="FIRBPF">
+        <property name="geometry">
+         <rect>
+          <x>142</x>
+          <y>20</y>
+          <width>121</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>BPF Output Siganl</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="LPFinput">
+          <property name="text">
+           <string>LPF Intput Signal</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="BPFinput">
+          <property name="text">
+           <string>BPF Input Signal</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Choose an Operation...</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
