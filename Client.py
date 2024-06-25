@@ -4,7 +4,7 @@ from PyQt5.QtNetwork import QHostAddress, QTcpSocket
 import pickle
 from PyQt5.QtCore import QByteArray
 
-HOST = "192.168.109.171"
+HOST = "192.168.109.171" # Enter your ip address
 PORT = 12345
 
 class test(QtWidgets.QMainWindow):
